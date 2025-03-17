@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #2B4448; /* Deep Teal Gray */
+    color: #FCB7A8; /* Soft Peach */
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    text-shadow: 3px 3px #758086; /* Muted Blue-Gray */
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    background: #758086; /* Cool Gray */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ED6A40; /* Retro Orange */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #FCB7A8; /* Soft Peach */
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #2B4448, -4px -4px 0 #758086; /* Deep shadows */
+    transition: all 0.2s ease-in-out;
+}
+
+.cell:hover {
+    background-color: #FCB7A8; /* Lighter Peach */
+    color: #2B4448; /* Deep contrast */
+}
+
+.status {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #FCB7A8;
+}
+
+.reset-btn {
+    background-color: #ED6A40; /* Retro Orange */
+    color: #2B4448;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 4px 4px 0 #758086;
+    transition: all 0.2s ease-in-out;
+}
+
+.reset-btn:hover {
+    background-color: #FCB7A8; /* Soft Peach */
+    color: #2B4448;
+}
